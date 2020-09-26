@@ -4,7 +4,7 @@ var form = document.getElementById('form');
 
 
 
-validate () {
+function validate () {
 
     if (!inputNum.value) {
         console.error("Please enter values in the field")
