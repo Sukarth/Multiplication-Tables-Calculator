@@ -4,7 +4,7 @@ var form = document.getElementById('form');
 
 
 
-form.addEventListener('submit', function (event) {
+validate () {
 
     if (!inputNum.value) {
         console.error("Please enter values in the field")
@@ -31,4 +31,4 @@ form.addEventListener('submit', function (event) {
         }
 
     }
-});
+};
