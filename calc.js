@@ -1,11 +1,12 @@
-var inputNum = document.getElementById('inputNum');
+
 var Answer = document.getElementById('Answer')
 var form = document.getElementById('form');
 
 
 
-function validate () {
-
+form.addEventListener('submit', function (event) {
+    var inputNum = document.getElementById('numField1');
+    event.preventDefault();
     if (!inputNum.value) {
         console.error("Please enter values in the field")
         alert("Please enter values in the field")
@@ -16,7 +17,7 @@ function validate () {
         var counter = 0;
         counter = 0;
         while (counter < 10) {
-            event.preventDefault();
+            
             storedNum = storedNum + inputNum;
             counter = counter + 1;
             var h3 = document.createElement("h3");
@@ -31,4 +32,4 @@ function validate () {
         }
 
     }
-};
+});
